@@ -57,20 +57,20 @@ const CartItem = props => (
             <div className="total-price-remove-container">
               <p className="cart-total-price">Rs {price * quantity}/-</p>
               <button
+                data-testid="remove"
                 className="remove-button"
                 type="button"
                 onClick={onRemoveCartItem}
-                data-testid="remove"
               >
                 Remove
               </button>
             </div>
           </div>
           <button
+            data-testid="remove"
             className="delete-button"
             type="button"
             onClick={onRemoveCartItem}
-            data-testid="remove"
           >
             <AiFillCloseCircle color="#616E7C" size={20} />
           </button>

@@ -33,7 +33,7 @@ class App extends Component {
     if (productInCart) {
       const updatedList = cartList.map(item => {
         if (product.id === item.id) {
-          return {...item, quantity: item.quantity + 1}
+          return {...item, quantity: item.quantity + product.quantity}
         }
         return item
       })
